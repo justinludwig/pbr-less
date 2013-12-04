@@ -3,28 +3,26 @@
 @linkColorHover: #00f;
 @linkColorActive: #c00;
 
-@footerHeight: 20px;
-@footerFontSize: 10px;
-@footerText: #666;
-@footerBackground: #ccc;
+@headerHeight: 25px;
+@headerFontSize: 15px;
+@headerText: #090;
+@headerBackground: #cfc;
 
-@footerLinkColor: desaturate(@linkColor, 20%);
-@footerLinkColorHover: desaturate(@linkColorHover, 20%);
-@footerLinkColorActive: desaturate(@linkColorActive, 20%);
+@headerLinkColor: desaturate(@linkColor, 20%);
+@headerLinkColorHover: desaturate(@linkColorHover, 20%);
+@headerLinkColorActive: desaturate(@linkColorActive, 20%);
 
-footer {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    height: @footerHeight;
-    color: @footerText;
-    font-size: @footerFontSize;
+header {
+    height: @headerHeight;
+    color: @headerText;
+    background: @headerBackground;
+    font-size: @headerFontSize;
     text-align: center;
-    line-height: @footerFontSize + 5;
+    line-height: @headerHeight;
 
     menu {
         margin: 0;
+        padding: 0;
     }
     li {
         display: inline-block;
@@ -34,13 +32,13 @@ footer {
         margin: 0;
     }
     a, a:visited {
-        color: @footerLinkColor;
+        color: @headerLinkColor;
     }
     a:hover {
-        color: @footerLinkColorHover;
+        color: @headerLinkColorHover;
     }
     a:active {
-        color: @footerLinkColorActive;
+        color: @headerLinkColorActive;
     }
 }
 
