@@ -25,6 +25,8 @@ grails.project.dependency.resolution = {
     }
     log "warn" // log level of Ivy resolver, either 'error', 'warn', 'info', 'debug' or 'verbose'
     repositories {
+        mavenRepo id: 'pst', url: 'http://maven.pitchstonetechnology.com/archiva/repository/private/'
+
         grailsCentral()
         mavenLocal()
         mavenCentral()
@@ -36,13 +38,18 @@ grails.project.dependency.resolution = {
     }
     dependencies {
         // specify dependencies here under either 'build', 'compile', 'runtime', 'test' or 'provided' scopes eg.
-        // runtime 'mysql:mysql-connector-java:5.1.24'
+        runtime 'com.asual.lesscss:lesscss-engine:1.4.2'
     }
 
     plugins {
-        build(":release:3.0.1",
-              ":rest-client-builder:1.0.3") {
+        build(
+            ":tomcat:7.0.47",
+            ":release:3.0.1",
+            ":rest-client-builder:1.0.3",
+        ) {
             export = false
         }
+
+        runtime ":pre-built-resources:0.1-SNAPSHOT"
     }
 }

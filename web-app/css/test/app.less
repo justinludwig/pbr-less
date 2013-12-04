@@ -1,0 +1,46 @@
+
+@linkColor: #00c;
+@linkColorHover: #00f;
+@linkColorActive: #c00;
+
+@footerHeight: 20px;
+@footerFontSize: 10px;
+@footerText: #666;
+@footerBackground: #ccc;
+
+@footerLinkColor: desaturate(@linkColor, 20%);
+@footerLinkColorHover: desaturate(@linkColorHover, 20%);
+@footerLinkColorActive: desaturate(@linkColorActive, 20%);
+
+footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: @footerHeight;
+    color: @footerText;
+    font-size: @footerFontSize;
+    text-align: center;
+    line-height: @footerFontSize + 5;
+
+    menu {
+        margin: 0;
+    }
+    li {
+        display: inline-block;
+        padding: 0 .5em;
+    }
+    li, p {
+        margin: 0;
+    }
+    a, a:visited {
+        color: @footerLinkColor;
+    }
+    a:hover {
+        color: @footerLinkColorHover;
+    }
+    a:active {
+        color: @footerLinkColorActive;
+    }
+}
+
