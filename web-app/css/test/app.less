@@ -1,44 +1,17 @@
 
-@linkColor: #00c;
-@linkColorHover: #00f;
-@linkColorActive: #c00;
+body {
+    color: #433;
+    background: #fffff7;
+}
 
-@headerHeight: 25px;
-@headerFontSize: 15px;
-@headerText: #090;
-@headerBackground: #cfc;
-
-@headerLinkColor: desaturate(@linkColor, 20%);
-@headerLinkColorHover: desaturate(@linkColorHover, 20%);
-@headerLinkColorActive: desaturate(@linkColorActive, 20%);
-
-header {
-    height: @headerHeight;
-    color: @headerText;
-    background: @headerBackground;
-    font-size: @headerFontSize;
-    text-align: center;
-    line-height: @headerHeight;
-
-    menu {
-        margin: 0;
-        padding: 0;
+.is-ok {
+    span {
+        display: none;
     }
-    li {
-        display: inline-block;
-        padding: 0 .5em;
-    }
-    li, p {
-        margin: 0;
-    }
-    a, a:visited {
-        color: @headerLinkColor;
-    }
-    a:hover {
-        color: @headerLinkColorHover;
-    }
-    a:active {
-        color: @headerLinkColorActive;
+    &:before {
+        content: 'Stylin\' with LESS!';
     }
 }
+
+@import 'include/header.less';
 

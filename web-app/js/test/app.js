@@ -1,3 +1,3 @@
 
-document.getElementById("text").innerHTML = "this header styled with less css!";
+document.getElementById("test").className = 'is-ok';
 

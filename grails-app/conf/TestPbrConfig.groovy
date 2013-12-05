@@ -8,6 +8,12 @@ processor {
         com.pitchstone.plugin.pbr.less.processor.CompileLess
         com.pitchstone.plugin.pbr.build.processor.DeployToTargetDir
     '''
+    less {
+        options {
+            // compress = true
+            lineNumbers = 'comments'
+        }
+    }
 }
 
 module {
