@@ -19,13 +19,12 @@ processor {
 module {
     definition {
         application {
-            submodules {
-                stylesheet {
-                    url = 'css/test/app.less'
-                    disposition = 'head'
-                }
-                script = 'js/test/app.js'
+            submodules = '*'
+            stylesheet {
+                url = 'css/test/app.less'
+                disposition = 'head'
             }
+            script = 'js/test/app.js'
         }
     }
 }
