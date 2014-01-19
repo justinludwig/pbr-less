@@ -1,8 +1,8 @@
-package com.pitchstone.plugin.pbr.less.processor
+package org.c02e.plugin.pbr.less.processor
 
-import com.pitchstone.plugin.pbr.build.base.BaseBuilder
-import com.pitchstone.plugin.pbr.load.base.BaseLoader
-import com.pitchstone.plugin.pbr.load.base.BaseModule
+import org.c02e.plugin.pbr.build.base.BaseBuilder
+import org.c02e.plugin.pbr.load.base.BaseLoader
+import org.c02e.plugin.pbr.load.base.BaseModule
 import spock.lang.Specification
 
 class CompileLessSpec extends Specification {

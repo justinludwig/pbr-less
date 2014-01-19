@@ -25,7 +25,8 @@ grails.project.dependency.resolution = {
     }
     log "warn" // log level of Ivy resolver, either 'error', 'warn', 'info', 'debug' or 'verbose'
     repositories {
-        mavenRepo id: 'pst', url: 'http://maven.pitchstonetechnology.com/archiva/repository/private/'
+        mavenRepo id: 'private',
+            url: 'http://maven.pitchstonetechnology.com/archiva/repository/private/'
 
         grailsCentral()
         mavenLocal()
@@ -43,7 +44,7 @@ grails.project.dependency.resolution = {
 
     plugins {
         build(
-            ":tomcat:7.0.47",
+            ":tomcat:7.0.50",
             ":release:3.0.1",
             ":rest-client-builder:1.0.3",
         ) {

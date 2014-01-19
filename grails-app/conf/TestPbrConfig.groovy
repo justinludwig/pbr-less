@@ -1,12 +1,12 @@
 
 processor {
     order = '''
-        com.pitchstone.plugin.pbr.build.processor.FillInContentType
-        com.pitchstone.plugin.pbr.build.processor.FillInDisposition
-        com.pitchstone.plugin.pbr.build.processor.FillInLastModified
-        com.pitchstone.plugin.pbr.build.processor.ApplyBaseUrl
-        com.pitchstone.plugin.pbr.less.processor.CompileLess
-        com.pitchstone.plugin.pbr.build.processor.DeployToTargetDir
+        org.c02e.plugin.pbr.build.processor.FillInContentType
+        org.c02e.plugin.pbr.build.processor.FillInDisposition
+        org.c02e.plugin.pbr.build.processor.FillInLastModified
+        org.c02e.plugin.pbr.build.processor.ApplyBaseUrl
+        org.c02e.plugin.pbr.less.processor.CompileLess
+        org.c02e.plugin.pbr.build.processor.DeployToTargetDir
     '''
     less {
         options {

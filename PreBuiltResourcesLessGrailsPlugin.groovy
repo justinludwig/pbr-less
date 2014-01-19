@@ -9,17 +9,18 @@ class PreBuiltResourcesLessGrailsPlugin {
         'grails-app/views/error.gsp',
         'grails-app/*/test/*.*',
         'web-app/*/test/*.*',
+        'web-app/*/test/**/*.*',
     ]
 
     def title = "Pre-Built Resources: LESS Plugin"
     def author = "Justin Ludwig"
-    def authorEmail = "justin@pitchstonetechnology.com"
+    def authorEmail = "justin@codetechnology.org"
     def description = '''
 LESS CSS support for Pre-Built Resources Plugin.
     '''
 
     // URL to the plugin's documentation
-    def documentation = ''//"http://grails.org/plugin/pre-built-resources"
+    def documentation = ''//"http://grails.org/plugin/pre-built-resources-less"
 
     // Extra (optional) plugin metadata
 
@@ -28,8 +29,8 @@ LESS CSS support for Pre-Built Resources Plugin.
 
     // Details of company behind the plugin (if there is one)
     def organization = [
-        name: "PitchStone Technology",
-        url: "http://www.pitchstonetechnology.com/",
+        name: "CODE Technology",
+        url: "http://codesurvey.org",
     ]
 
     // Any additional developers beyond the author specified above.
@@ -41,34 +42,4 @@ LESS CSS support for Pre-Built Resources Plugin.
     // Online location of the plugin's browseable source code.
 //    def scm = [ url: "http://svn.codehaus.org/grails-plugins/" ]
 
-    def doWithWebDescriptor = { xml ->
-        // TODO Implement additions to web.xml (optional), this event occurs before
-    }
-
-    def doWithSpring = {
-        // TODO Implement runtime spring config (optional)
-    }
-
-    def doWithDynamicMethods = { ctx ->
-        // TODO Implement registering dynamic methods to classes (optional)
-    }
-
-    def doWithApplicationContext = { ctx ->
-        // TODO Implement post initialization spring config (optional)
-    }
-
-    def onChange = { event ->
-        // TODO Implement code that is executed when any artefact that this plugin is
-        // watching is modified and reloaded. The event contains: event.source,
-        // event.application, event.manager, event.ctx, and event.plugin.
-    }
-
-    def onConfigChange = { event ->
-        // TODO Implement code that is executed when the project configuration changes.
-        // The event is the same as for 'onChange'.
-    }
-
-    def onShutdown = { event ->
-        // TODO Implement code that is executed when the application shuts down (optional)
-    }
 }

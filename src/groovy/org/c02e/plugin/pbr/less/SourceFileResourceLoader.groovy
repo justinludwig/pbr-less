@@ -1,7 +1,7 @@
-package com.pitchstone.plugin.pbr.less
+package org.c02e.plugin.pbr.less
 
 import com.asual.lesscss.loader.ResourceLoader
-import com.pitchstone.plugin.pbr.build.Builder
+import org.c02e.plugin.pbr.build.Builder
 
 /**
  * Loads files (module files and imports) for LESS engine.
@@ -19,7 +19,7 @@ class SourceFileResourceLoader implements ResourceLoader {
         // use working file for modules
         def module = builder.loader.getModuleForSourceUrl(path)
         if (module)
-            return builder.tools.canWorkingFile(module)
+            return builder.tools.canGetWorkingFile(module)
 
         // otherwise (for imports) load from source dir
         path = path.replaceFirst(/^file:/, '')

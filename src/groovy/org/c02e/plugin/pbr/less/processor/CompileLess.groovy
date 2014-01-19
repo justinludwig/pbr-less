@@ -1,4 +1,4 @@
-package com.pitchstone.plugin.pbr.less.processor
+package org.c02e.plugin.pbr.less.processor
 
 import com.asual.lesscss.LessEngine
 import com.asual.lesscss.LessOptions
@@ -9,10 +9,10 @@ import com.asual.lesscss.loader.HTTPResourceLoader
 import com.asual.lesscss.loader.JNDIResourceLoader
 import com.asual.lesscss.loader.ResourceLoader
 import com.asual.lesscss.loader.UnixNewlinesResourceLoader
-import com.pitchstone.plugin.pbr.less.SourceFileResourceLoader
-import com.pitchstone.plugin.pbr.Module
-import com.pitchstone.plugin.pbr.build.Builder
-import com.pitchstone.plugin.pbr.build.Processor
+import org.c02e.plugin.pbr.less.SourceFileResourceLoader
+import org.c02e.plugin.pbr.Module
+import org.c02e.plugin.pbr.build.Builder
+import org.c02e.plugin.pbr.build.Processor
 
 /**
  * Compiles less modules (those with 'text/less' content type) to css.
