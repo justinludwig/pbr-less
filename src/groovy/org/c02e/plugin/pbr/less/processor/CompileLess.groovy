@@ -54,7 +54,7 @@ class CompileLess implements Processor {
 
     LessEngine getEngine() {
         if (!engine)
-            engine = new LessEngine(new LessOptions(config?.options), resourceLoader)
+            engine = new LessEngine(new LessOptions(options ?: [:]), resourceLoader)
         return engine
     }
 
@@ -67,7 +67,7 @@ class CompileLess implements Processor {
             new HTTPResourceLoader()
         )
 
-		if (config?.options?.css)
+		if (options?.css)
 			loader = new CssProcessingResourceLoader(loader)
 
 		loader = new UnixNewlinesResourceLoader(loader)
@@ -83,11 +83,17 @@ class CompileLess implements Processor {
     }
 
     String getCharset() {
-        config?.options?.charset ?: 'UTF-8'
+        options?.charset ?: 'UTF-8'
     }
 
     boolean isCompress() {
-        config.options?.compress
+        options?.compress
+    }
+
+    Map getOptions() {
+        // ignore empty ConfigObject instances that are
+        // created automatically if the config property is not specified
+        config?.options?.findAll { k,v -> !(v instanceof ConfigObject) }
     }
 
     Map getConfig() {
