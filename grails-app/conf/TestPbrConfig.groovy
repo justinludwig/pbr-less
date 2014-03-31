@@ -17,14 +17,16 @@ processor {
 }
 
 module {
+    hook = '''
+        org.c02e.plugin.pbr.load.hook.StarSubModuleHook
+        org.c02e.plugin.pbr.load.hook.SimpleModuleHook
+        org.c02e.plugin.pbr.load.hook.StarUrlHook
+    '''
     definition {
         application {
             submodules = '*'
-            stylesheet {
-                url = 'css/test/app.less'
-                disposition = 'head'
-            }
             script = 'js/test/app.js'
+            stylesheet = 'css/test/app.less'
         }
     }
 }
