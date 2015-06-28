@@ -1,8 +1,8 @@
 class PreBuiltResourcesLessGrailsPlugin {
     // the plugin version
-    def version = "0.1-SNAPSHOT"
+    def version = "0.1"
     // the version or versions of Grails the plugin is designed for
-    def grailsVersion = "2.0 > *"
+    def grailsVersion = "2.3 > *"
     // resources that are excluded from plugin packaging
     def pluginExcludes = [
         'grails-app/conf/Test*',
@@ -14,7 +14,7 @@ class PreBuiltResourcesLessGrailsPlugin {
 
     def title = "Pre-Built Resources: LESS Plugin"
     def author = "Justin Ludwig"
-    def authorEmail = "justin@codetechnology.org"
+    def authorEmail = "justin@codetechnology.com"
     def description = '''
 LESS CSS support for Pre-Built Resources Plugin.
     '''
@@ -30,7 +30,7 @@ LESS CSS support for Pre-Built Resources Plugin.
     // Details of company behind the plugin (if there is one)
     def organization = [
         name: "CODE Technology",
-        url: "http://codesurvey.org",
+        url: "http://www.codetechnology.com/",
     ]
 
     // Any additional developers beyond the author specified above.
@@ -40,6 +40,6 @@ LESS CSS support for Pre-Built Resources Plugin.
 //    def issueManagement = [ system: "JIRA", url: "http://jira.grails.org/browse/GPMYPLUGIN" ]
 
     // Online location of the plugin's browseable source code.
-//    def scm = [ url: "http://svn.codehaus.org/grails-plugins/" ]
+    def scm = [ url: "https://github.com/justinludwig/pbr-less" ]
 
 }
