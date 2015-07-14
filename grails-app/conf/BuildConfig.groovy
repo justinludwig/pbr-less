@@ -51,6 +51,6 @@ grails.project.dependency.resolution = {
             export = false
         }
 
-        runtime ":pre-built-resources:0.1-SNAPSHOT"
+        runtime ":pre-built-resources:0.1"
     }
 }
